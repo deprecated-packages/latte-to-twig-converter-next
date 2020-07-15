@@ -17,7 +17,13 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->autowire();
 
     $services->load('Migrify\LatteToTwig\\', __DIR__ . '/../src')
-        ->exclude([__DIR__ . '/../src/Contract', __DIR__ . '/../src/Exception', __DIR__ . '/../src/HttpKernel/LatteToTwigKernel.php']);
+        ->exclude(
+            [
+                __DIR__ . '/../src/Contract',
+                __DIR__ . '/../src/Exception',
+                __DIR__ . '/../src/HttpKernel/LatteToTwigKernel.php',
+            ]
+        );
 
     $services->set(SymfonyStyleFactory::class);
 
