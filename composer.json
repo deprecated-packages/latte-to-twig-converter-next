@@ -1,5 +1,5 @@
 {
-    "name": "symplify/latte-to-twig",
+    "name": "symplify/latte-to-twig-converter",
     "description": "Latte to Twig converter converts Latte to Twig",
     "license": "MIT",
     "bin": [
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Symplify\\LatteToTwig\\": "src"
+            "Symplify\\LatteToTwigConverter\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Symplify\\LatteToTwig\\Tests\\": "tests"
+            "Symplify\\LatteToTwigConverter\\Tests\\": "tests"
         }
     },
     "minimum-stability": "dev",

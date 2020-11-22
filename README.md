@@ -1,6 +1,6 @@
 # Latte to Twig Converter
 
-[![Downloads total](https://img.shields.io/packagist/dt/symplify/latte-to-twig.svg?style=flat-square)](https://packagist.org/packages/symplify/latte-to-twig/stats)
+[![Downloads total](https://img.shields.io/packagist/dt/symplify/latte-to-twig-converter.svg?style=flat-square)](https://packagist.org/packages/symplify/latte-to-twig-converter/stats)
 
 Do you want to turn your [Latte](https://latte.nette.org/en/) templates to [Twig](https://twig.symfony.com/)?
 
@@ -39,7 +39,7 @@ This package won't do it all for you, but **it will help you with 80 % of the bo
 ## Install
 
 ```bash
-composer require symplify/latte-to-twig --dev
+composer require symplify/latte-to-twig-converter --dev
 ```
 
 ## Usage

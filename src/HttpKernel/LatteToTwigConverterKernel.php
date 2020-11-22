@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Symplify\LatteToTwig\HttpKernel;
+namespace Symplify\LatteToTwigConverter\HttpKernel;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symplify\SymplifyKernel\HttpKernel\AbstractSymplifyKernel;
 
-final class LatteToTwigKernel extends AbstractSymplifyKernel
+final class LatteToTwigConverterKernel extends AbstractSymplifyKernel
 {
     public function registerContainerConfiguration(LoaderInterface $loader): void
     {

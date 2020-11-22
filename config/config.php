@@ -12,10 +12,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->autowire()
         ->autoconfigure();
 
-    $services->load('Symplify\LatteToTwig\\', __DIR__ . '/../src')
+    $services->load('Symplify\LatteToTwigConverter\\', __DIR__ . '/../src')
         ->exclude([
             __DIR__ . '/../src/Contract',
             __DIR__ . '/../src/Exception',
-            __DIR__ . '/../src/HttpKernel/LatteToTwigKernel.php',
+            __DIR__ . '/../src/HttpKernel/LatteToTwigConverterKernel.php',
         ]);
 };

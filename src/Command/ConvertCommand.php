@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Symplify\LatteToTwig\Command;
+namespace Symplify\LatteToTwigConverter\Command;
 
 use Nette\Utils\Strings;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symplify\LatteToTwig\LatteToTwigConverter;
+use Symplify\LatteToTwigConverter\LatteToTwigConverter;
 use Symplify\PackageBuilder\Console\Command\AbstractSymplifyCommand;
 use Symplify\PackageBuilder\Console\ShellCode;
 use Symplify\PackageBuilder\ValueObject\Option;
@@ -24,11 +24,11 @@ final class ConvertCommand extends AbstractSymplifyCommand
     /**
      * @var LatteToTwigConverter
      */
-    private $latteToTwigConverter;
+    private $LatteToTwigConverter;
 
-    public function __construct(LatteToTwigConverter $latteToTwigConverter)
+    public function __construct(LatteToTwigConverter $LatteToTwigConverter)
     {
-        $this->latteToTwigConverter = $latteToTwigConverter;
+        $this->LatteToTwigConverter = $LatteToTwigConverter;
 
         parent::__construct();
     }
@@ -49,7 +49,7 @@ final class ConvertCommand extends AbstractSymplifyCommand
         $fileInfos = $this->smartFinder->find($sources, '#\.(twig|latte)$#');
 
         foreach ($fileInfos as $fileInfo) {
-            $convertedContent = $this->latteToTwigConverter->convertFile($fileInfo);
+            $convertedContent = $this->LatteToTwigConverter->convertFile($fileInfo);
             $oldFilePath = $fileInfo->getPathname();
             $newFilePath = Strings::replace($fileInfo->getPathname(), self::LATTE_SUFFIX_REGEX, '.twig');
 

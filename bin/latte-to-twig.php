@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Symplify\LatteToTwig\HttpKernel\LatteToTwigKernel;
+use Symplify\LatteToTwigConverter\HttpKernel\LatteToTwigConverterKernel;
 use Symplify\SymplifyKernel\ValueObject\KernelBootAndApplicationRun;
 
 $possibleAutoloadPaths = [
@@ -22,5 +22,5 @@ foreach ($possibleAutoloadPaths as $possibleAutoloadPath) {
     }
 }
 
-$kernelBootAndApplicationRun = new KernelBootAndApplicationRun(LatteToTwigKernel::class);
+$kernelBootAndApplicationRun = new KernelBootAndApplicationRun(LatteToTwigConverterKernel::class);
 $kernelBootAndApplicationRun->run();

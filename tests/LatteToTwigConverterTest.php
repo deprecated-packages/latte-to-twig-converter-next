@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Symplify\LatteToTwig\Tests;
+namespace Symplify\LatteToTwigConverter\Tests;
 
 use Iterator;
 use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
-use Symplify\LatteToTwig\HttpKernel\LatteToTwigKernel;
-use Symplify\LatteToTwig\LatteToTwigConverter;
+use Symplify\LatteToTwigConverter\HttpKernel\LatteToTwigConverterKernel;
+use Symplify\LatteToTwigConverter\LatteToTwigConverter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
@@ -17,12 +17,12 @@ final class LatteToTwigConverterTest extends AbstractKernelTestCase
     /**
      * @var LatteToTwigConverter
      */
-    private $latteToTwigConverter;
+    private $LatteToTwigConverter;
 
     protected function setUp(): void
     {
-        $this->bootKernel(LatteToTwigKernel::class);
-        $this->latteToTwigConverter = self::$container->get(LatteToTwigConverter::class);
+        $this->bootKernel(LatteToTwigConverterKernel::class);
+        $this->LatteToTwigConverter = self::$container->get(LatteToTwigConverter::class);
     }
 
     /**
@@ -34,7 +34,7 @@ final class LatteToTwigConverterTest extends AbstractKernelTestCase
             $fixtureFileInfo
         );
 
-        $convertedContent = $this->latteToTwigConverter->convertFile(
+        $convertedContent = $this->LatteToTwigConverter->convertFile(
             $inputFileInfoAndExpectedFileInfo->getInputFileInfo()
         );
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Symplify\LatteToTwig\Exception;
+namespace Symplify\LatteToTwigConverter\Exception;
 
 use Exception;
 
