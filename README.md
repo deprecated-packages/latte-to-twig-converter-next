@@ -1,6 +1,6 @@
 # Latte to Twig Converter
 
-[![Downloads total](https://img.shields.io/packagist/dt/migrify/latte-to-twig.svg?style=flat-square)](https://packagist.org/packages/migrify/latte-to-twig/stats)
+[![Downloads total](https://img.shields.io/packagist/dt/symplify/latte-to-twig.svg?style=flat-square)](https://packagist.org/packages/symplify/latte-to-twig/stats)
 
 Do you want to turn your [Latte](https://latte.nette.org/en/) templates to [Twig](https://twig.symfony.com/)?
 
@@ -39,7 +39,7 @@ This package won't do it all for you, but **it will help you with 80 % of the bo
 ## Install
 
 ```bash
-composer require migrify/latte-to-twig --dev
+composer require symplify/latte-to-twig --dev
 ```
 
 ## Usage
@@ -79,8 +79,8 @@ That's it :)
 
 ## Report Issues
 
-In case you are experiencing a bug or want to request a new feature head over to the [migrify monorepo issue tracker](https://github.com/migrify/migrify/issues)
+In case you are experiencing a bug or want to request a new feature head over to the [Symplify monorepo issue tracker](https://github.com/symplify/symplify/issues)
 
 ## Contribute
 
-The sources of this package are contained in the migrify monorepo. We welcome contributions for this package on [migrify/migrify](https://github.com/migrify/migrify).
+The sources of this package are contained in the Symplify monorepo. We welcome contributions for this package on [symplify/symplify](https://github.com/symplify/symplify).

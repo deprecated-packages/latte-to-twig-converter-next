@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Migrify\LatteToTwig\Contract\CaseConverter;
+namespace Symplify\LatteToTwig\Contract\CaseConverter;
 
 interface CaseConverterInterface
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Migrify\LatteToTwig\CaseConverter;
+namespace Symplify\LatteToTwig\CaseConverter;
 
-use Migrify\LatteToTwig\Contract\CaseConverter\CaseConverterInterface;
 use Nette\Utils\Strings;
+use Symplify\LatteToTwig\Contract\CaseConverter\CaseConverterInterface;
 
 /**
  * This needs to be run first, since it only move n:sytax to {syntax}...{/syntax} - all in Latte

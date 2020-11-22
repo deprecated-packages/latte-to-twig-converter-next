@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Migrify\LatteToTwig;
+namespace Symplify\LatteToTwig;
 
-use Migrify\LatteToTwig\Contract\CaseConverter\CaseConverterInterface;
-use Migrify\LatteToTwig\Exception\ConfigurationException;
+use Symplify\LatteToTwig\Contract\CaseConverter\CaseConverterInterface;
+use Symplify\LatteToTwig\Exception\ConfigurationException;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
 final class LatteToTwigConverter

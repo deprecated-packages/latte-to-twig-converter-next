@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Migrify\LatteToTwig\Tests;
+namespace Symplify\LatteToTwig\Tests;
 
 use Iterator;
-use Migrify\LatteToTwig\HttpKernel\LatteToTwigKernel;
-use Migrify\LatteToTwig\LatteToTwigConverter;
 use Symplify\EasyTesting\DataProvider\StaticFixtureFinder;
 use Symplify\EasyTesting\StaticFixtureSplitter;
+use Symplify\LatteToTwig\HttpKernel\LatteToTwigKernel;
+use Symplify\LatteToTwig\LatteToTwigConverter;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
@@ -39,8 +39,7 @@ final class LatteToTwigConverterTest extends AbstractKernelTestCase
         );
 
         $this->assertSame(
-            $inputFileInfoAndExpectedFileInfo->getExpectedFileInfo()
-                ->getContents(),
+            $inputFileInfoAndExpectedFileInfo->getExpectedFileContent(),
             $convertedContent,
             $fixtureFileInfo->getRelativeFilePathFromCwd()
         );
